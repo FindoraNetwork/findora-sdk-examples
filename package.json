@@ -1,6 +1,21 @@
 {
+  "name": "findora-sdk-examples",
+  "version": "0.0.2",
+  "description": "Findora SDK examples",
+  "main": "./index.js",
+  "homepage": "https://github.com/FindoraNetwork/findora-sdk-examples",
+  "license": "ISC",
+  "author": "Findora Network",
+  "keywords": [
+    "crypto",
+    "blockchain"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/FindoraNetwork/findora-sdk-examples.git"
+  },
   "dependencies": {
-    "@findora-network/findora-sdk.js": "^1.0.0",
+    "@findora-network/findora-sdk.js": "https://github.com/FindoraNetwork/findora-sdk.git#develop",
     "axios": "^0.24.0",
     "bignumber.js": "^9.0.1"
   }

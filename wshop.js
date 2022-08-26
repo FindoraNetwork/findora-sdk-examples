@@ -1,7 +1,7 @@
 const findoraSdk = require("@findora-network/findora-sdk.js");
 
 const sdkEnv = {
-  hostUrl: "https://prod-forge.prod.findora.org",
+  hostUrl: "https://prod-testnet.prod.findora.org",
 };
 
 const { default: SdkInstance } = findoraSdk.Sdk;
