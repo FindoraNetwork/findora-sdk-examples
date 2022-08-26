@@ -1,7 +1,7 @@
 const findoraSdk = require("@findora-network/findora-sdk.js");
 
 const sdkEnv = {
-  hostUrl: "https://prod-forge.prod.findora.org",
+  hostUrl: "https://prod-testnet.prod.findora.org",
   cachePath: "./cache",
 };
 
@@ -16,11 +16,16 @@ const {
 
 SdkInstance.init(sdkEnv);
 
-const mnemonicString = "";
+console.log(`\nConnecting to "${sdkEnv.hostUrl}"\n`);
+
+// please replace it with your menmonic
+const mnemonicString =
+  "couple glow transfer castle mirror tomorrow believe jazz sail join design mirror much fruit prison auction burst cute vote certain orphan taxi visual wink";
 
 const password = "123";
 
-const privateKey = "";
+// please replace it with you private key
+const privateKey = "qMXa8VK4fxBJmfAEenGwUuCR-YwMCqcxbiq7oU3bBsY=";
 
 const yourMnenomic = mnemonicString.split(" ");
 
@@ -147,14 +152,14 @@ const getFraBalanceTwo = async () => {
 
   const balanceAlso = await AccountApi.getBalance(newWalletFromPrivateKey);
 
-  console.log(
-    "balance from the wallet restored using private  is",
-    balanceAlso
-  );
+  console.log("balance from the wallet restored using private is", balanceAlso);
 
   console.log("\n");
 };
 
-// createKeypair();
-getFraBalanceTwo();
-// sendToMany();
+const main = async () => {
+  await createKeypair();
+  // await getFraBalanceTwo();
+};
+
+main();
